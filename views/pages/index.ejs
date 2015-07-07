@@ -5,27 +5,28 @@
 </head>
 
 <body class="container">
-    <div class="col-sm-6 col-sm-offset-3" ng-controller="mainController as application">
-      <h1>Chocolate.</h1>
-      <div class="addArea">
-        <div class="row">
-          <div class="col-sm-12">
-            <input class="form-control" value="" type="text" placeholder="Click here & type some things to do." ng-model="taskName">
-            <button class="form-control btn btn-default" ng-click="add()">Add</button>
-          </div>
-        </div>
-      </div>
-      <div class="taskArea">
-        <div class="row" ng-repeat="task in tasks" ng-show="task.remaining">   
-          <div class="col-sm-12">
-            <hr />
-            <span>{{task.name}}</span>
-          </div>
-          <div class="col-sm-4">
-            <button class="form-control btn btn-default" ng-click="task.remaining = remaining">Complete</button>
-          </div>
+  <div class="col-sm-6 col-sm-offset-3" ng-controller="mainController as application">
+    <h1>Chocolate.</h1>
+    <div class="addArea">
+      <div class="row">
+        <div class="col-sm-12">
+          <input class="form-control" value="" type="text" placeholder="Click here & type some things to do." ng-model="taskName">
+          <button class="form-control btn btn-default" ng-click="add()">Add</button>
         </div>
       </div>
     </div>
+    <div class="taskArea">
+      <div class="row" ng-repeat="task in tasks" ng-hide="task.complete">   
+        <div class="col-sm-12">
+          <hr />
+          <span>{{task.name}}</span>
+        </div>
+        <div class="col-sm-4">
+          <button class="form-control btn btn-default" ng-click="task.complete = true">Complete</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
