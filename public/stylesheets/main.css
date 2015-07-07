@@ -1,11 +1,12 @@
 html {
   padding:72px 0;
+  background-color: #EF5459;
 }
 body {
-  font-family: "adobe-caslon-pro";
+  font-family: "proxima-nova";
   -webkit-font-smoothing: antialiased;
-  font-weight: 300;
-  color:#2d2d2d;
+  background-color: transparent;
+  color:#fff;
 }
 h1 {
   font-size: 96px;
@@ -13,36 +14,55 @@ h1 {
 h2 {
   font-family: "proxima-nova";
   font-size: 22px;
-  color:#888;
 }
 span {
-  font-family: "adobe-caslon-pro";
   font-size: 26px;
 }
 span a {
   color:#15A019;
   font-style: italic;
 }
-.addArea {
+
+.island {
+  margin-bottom: 48px;
+}
+
+
+
+.taskGroup {
   margin:48px 0 24px 0;
 }
-.addArea input.form-control {
-  border:0;
-  box-shadow: none;
-  padding-left:0;
-  font-size: 30px;
-  height: 56px;
+.taskSingle {
+  margin:18px 0 18px 0;
 }
 .form-control {
   padding:6px 12px;
-  border-radius: 0;
+  height:48px;
+  border:0;
+  border-radius: 4px;
+  font-size: 20px;
   margin: 6px 0px;
 }
 .btn {
-  background-color: #000;
   color:#fff;
-  font-family: "proxima-nova";
-  font-weight: 700;
+  font-size: 20px;
+  background-color: #bf4347;
+  border:0;
+}.btn:hover,
+ .btn:visited,
+ .btn:focus {
+  color:#fff;
+  background-color: #8f3235;
+}
+footer p {
   font-size: 17px;
-  height: 50px;
+}
+footer p a {
+  color:#8f3235;
+}
+
+@media (max-width:632px) {
+  html {
+    font-size: 40%;
+  }
 }
