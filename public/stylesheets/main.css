@@ -1,27 +1,48 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
-
+html {
+  padding:72px 0;
+}
+body {
+  font-family: "adobe-caslon-pro";
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  color:#2d2d2d;
+}
+h1 {
+  font-size: 96px;
+}
+h2 {
+  font-family: "proxima-nova";
+  font-size: 22px;
+  color:#888;
+}
+span {
+  font-family: "adobe-caslon-pro";
+  font-size: 26px;
+}
+span a {
+  color:#15A019;
+  font-style: italic;
+}
+.addArea {
+  margin:48px 0 24px 0;
+}
+.addArea input.form-control {
+  border:0;
+  box-shadow: none;
+  padding-left:0;
+  font-size: 30px;
+  height: 56px;
+}
+.form-control {
+  padding:6px 12px;
+  border-radius: 0;
+  margin: 6px 0px;
+}
+.btn {
+  background-color: #000;
+  color:#fff;
+  font-family: "proxima-nova";
+  font-weight: 700;
+  font-size: 17px;
+  height: 50px;
+}
