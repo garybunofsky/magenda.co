@@ -6,25 +6,31 @@
 
 <body class="container">
   <div class="col-sm-6 col-sm-offset-3" ng-controller="mainController as application">
-    <div class="row island">
-      <div class="col-sm-12">
-        <h1>Littel.co</h1>
-        <h2>A light browser-based list maker.</h2>
+    <div class="islandGroup">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Memu.co</h1>
+          <h2>A light browser-based list maker.</h2>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <input class="form-control" value="" type="text" placeholder="Click here & type some things to do." ng-model="taskName">
-        <button class="form-control btn btn-default" ng-click="add()">Add</button>
+    <div class="buttonGroup">
+      <div class="row">
+        <div class="col-sm-12">
+          <input class="form-control" value="" type="text" placeholder="Click here & type some things to do." ng-model="taskName">
+          <button class="form-control btn btn-default" ng-click="add()">Add</button>
+        </div>
       </div>
     </div>
     <div class="taskGroup">
-      <div class="row taskSingle" ng-repeat="task in tasks" ng-hide="task.complete">   
-        <div class="col-sm-12">
-          <span>{{task.name}}</span>
-        </div>
-        <div class="col-sm-4">
-          <button class="form-control btn btn-default" ng-click="task.complete = true">Complete</button>
+      <div class="row">
+        <div class="taskSingle" ng-repeat="task in tasks" ng-hide="task.complete">   
+          <div class="col-sm-12">
+            <span>{{task.name}}</span>
+          </div>
+          <div class="col-sm-4">
+            <button class="form-control btn btn-default" ng-click="task.complete = true">Complete</button>
+          </div>
         </div>
       </div>
     </div>
