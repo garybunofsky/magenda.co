@@ -17,18 +17,17 @@
     <div class="buttonGroup">
       <div class="row">
         <div class="col-sm-12">
-          <input class="form-control animated fadeInLeft" value="" type="text" placeholder="Enter an item..." ng-model="taskName">
-          <button class="form-control btn btn-default animated fadeInRight" ng-click="add()"><i class="fa fa-check"></i> Add</button>
+          <form>
+            <input class="form-control animated fadeInLeft" value="" type="text" placeholder="Enter an item..." ng-model="taskName">
+            <button class="form-control btn btn-default animated fadeInRight" ng-click="add()"><i class="fa fa-plus"></i></button>
+          </form>
         </div>
       </div>
     </div>
     <div class="taskGroup">
       <div class="row taskSingle animated fadeIn" ng-repeat="task in tasks" ng-hide="task.complete">   
-        <div class="col-xs-8">
+        <div ng-click="task.complete = true">
           <span>{{task.name}}</span>
-        </div>
-        <div class="col-xs-4">
-          <button class="form-control btn btn-default taskSingle" ng-click="task.complete = true"><i class="fa fa-trash"></i></button>
         </div>
       </div>
     </div>
