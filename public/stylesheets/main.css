@@ -1,5 +1,5 @@
 html {
-  padding:120px 0;
+  padding:120px 0 120px 0;
   background-color: #EF5459;
 }
 body {
@@ -43,21 +43,29 @@ span a {
   padding:12px;
   background-color: #bf4347;
 }
-.taskSingle.btn {
+.taskSingle {
   background-color: #8f3235;
   border:0;
-}.taskSingle.btn:hover,
- .taskSingle.btn:visited,
- .taskSingle.btn:focus {
+  border-radius: 4px;
+}.taskSingle:hover,
+ .taskSingle:visited,
+ .taskSingle:focus {
   color:#fff;
-  background-color: #EF5459;
+  background-color: #bf4347;
+  cursor: pointer;
 }
+.taskSingle:hover.taskSingle:before {
+  font-family: 'fontawesome';
+  content:"\f014";
+  float:right;
+  display: inline;
+ }
 
 .form-control {
   padding:6px 12px;
   height:48px;
   border:0;
-  border-radius: 0;
+  border-radius: 4px;
   font-size: 20px;
   margin: 6px 0px;
 }
