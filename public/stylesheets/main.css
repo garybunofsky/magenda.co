@@ -1,21 +1,24 @@
 html {
   padding:120px 0 120px 0;
-  background-color: #EF5459;
 }
 body {
   font-family: "proxima-nova";
   -webkit-font-smoothing: antialiased;
   background-color: transparent;
-  color:#fff;
 }
 h1 {
   font-size: 72px;
   margin: 0;
+  font-weight: 200;
+  background-image: url('https://ununsplash.imgix.net/photo-1423766111988-c47a5ff6ed06?dpr=2&fit=crop&fm=jpg&h=600&q=75&w=1050');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
 }
 h2 {
   font-family: "proxima-nova";
   margin: 0;
-  color:#8f3235;
+  color:#999;
   font-size: 22px;
 }
 .islandGroup {
@@ -33,52 +36,51 @@ span a {
   margin-bottom: 48px;
 }
 
-
-
 .taskGroup {
   margin:48px 0 24px 0;
 }
 .taskSingle {
   margin:18px 0 18px 0;
   padding:12px;
-  background-color: #bf4347;
-}
-.taskSingle {
-  background-color: #8f3235;
-  border:0;
+  border:1px solid #B3B3B3;
   border-radius: 4px;
-}.taskSingle:hover,
- .taskSingle:visited,
- .taskSingle:focus {
-  color:#fff;
-  background-color: #bf4347;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+}
+.taskSingle input[type=checkbox], 
+.taskSingle input[type=radio] {
+  margin-right: 12px;
+}
+.taskSingle i {
+  color:#B3B3B3;
+  float:right;
+  margin:5px 0px 0px 0px;
+}
+.taskSingle i:hover,
+.taskSingle i:visited,
+.taskSingle i:focus {
+  color:#949472;
   cursor: pointer;
 }
-.taskSingle:hover.taskSingle:before {
-  font-family: 'fontawesome';
-  content:"\f014";
-  float:right;
-  display: inline;
- }
 
 .form-control {
   padding:6px 12px;
   height:48px;
-  border:0;
+  border:1px solid #B3B3B3;
   border-radius: 4px;
   font-size: 20px;
   margin: 6px 0px;
 }
 .btn {
-  color:#fff;
+  background-color:#C0B37D;
   font-size: 20px;
-  background-color: #bf4347;
   border:0;
+  color:#fff;
 }.btn:hover,
  .btn:visited,
  .btn:focus {
   color:#fff;
-  background-color: #8f3235;
+  background-color: #949472;
 }
 footer {
   margin-top:40%;
