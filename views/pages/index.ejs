@@ -10,24 +10,28 @@
       <div class="row">
         <div class="col-sm-12">
           <h1>memu.co</h1>
-          <h2>A light browser-based list maker.</h2>
+          <h2>A light, browser-based list builder.</h2>
         </div>
       </div>
     </div>
     <div class="buttonGroup">
       <div class="row">
-        <div class="col-sm-12">
           <form>
-            <input class="form-control animated fadeInLeft" value="" type="text" placeholder="Enter an item..." ng-model="taskName" autofocus="autofocus">
-            <button class="form-control btn btn-default animated fadeInRight" ng-click="add()"><i class="fa fa-plus"></i></button>
+            <div class="col-md-10">
+              <input class="form-control animated fadeInLeft" value="" type="text" placeholder="Enter an item..." ng-model="taskName" autofocus="autofocus">
+            </div>
+            <div class="col-md-2">
+              <button class="form-control btn btn-default animated fadeInRight" ng-click="add()" ng-disabled="!taskName"><i class="fa fa-angle-down"></i></button>
+            </div>
           </form>
-        </div>
       </div>
     </div>
     <div class="taskGroup">
       <div class="row taskSingle animated fadeIn" ng-repeat="task in tasks" ng-hide="task.complete">   
-        <div ng-click="task.complete = true">
+        <div>
+          <input type="checkbox">
           <span>{{task.name}}</span>
+          <i class="fa fa-trash-o" ng-click="task.complete = true">&nbsp;</i>
         </div>
       </div>
     </div>
@@ -37,7 +41,7 @@
   <div class="container">
     <div class="col-sm-6 col-sm-offset-3">
       <div class="row">
-        <p>Something by <a href="https://garybunofsky.com">Gary Bunofsky</a>.</p>
+        <!--p>Something by <a href="https://garybunofsky.com">Gary Bunofsky</a>.</p-->
       </div>
     </div>
   </div>
