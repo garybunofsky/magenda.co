@@ -15,6 +15,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 60s infinite linear;
 }
+
 h2 {
   font-family: "proxima-nova";
   margin: 0;
@@ -70,6 +71,33 @@ span a {
   border-radius: 4px;
   font-size: 20px;
   margin: 6px 0px;
+}
+.form-control[disabled] {
+  background-color: #fff;
+  border:1px solid #b3b3b3;
+}
+.form-control[disabled] i {
+  color:#949472;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border:1px solid #949472;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
 }
 .btn {
   background-color:#C0B37D;
