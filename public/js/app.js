@@ -13,7 +13,7 @@ var app = angular.module('application', []);
 
         $scope.tasks.push({
             name: $scope.taskName,
-            remaining: true
+            complete: false
         });
 
         // Clear input fields after push
