@@ -1,23 +1,20 @@
 var app = angular.module('application', []);
 
 (function() {
-  
   app.controller('mainController', 
-    function ($scope){
-
-    // Item List Arrays
+  function ($scope){
+    // item list arrays blank
     $scope.tasks = [];
 
-    // Add a Item to the list
+    // add an item to the list
     $scope.add = function () {
-
-        $scope.tasks.push({
-            name: $scope.taskName,
-            complete: false
-        });
-
-        // Clear input fields after push
-        $scope.taskName = "";
+      $scope.tasks.push({
+        name: $scope.taskName,
+        complete: false
+      });
+      
+      // clear input fields after push
+      $scope.taskName = "";
     };
   });
 })();
