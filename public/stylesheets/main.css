@@ -1,5 +1,7 @@
 html {
   padding:120px 0 120px 0;
+  position: relative;
+  min-height: 100%;
 }
 body {
   font-family:"aktiv-grotesk", sans-serif;
@@ -104,10 +106,11 @@ input[type="color"]:focus,
 }
 
 footer {
-  margin-top:20em;
-  bottom:0;
-  width:100%;
-  height:60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
   color:#B3B3B3;
   }footer p {
   font-size:17px;
