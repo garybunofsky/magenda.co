@@ -3,6 +3,7 @@
   <head>
     <% include ../partials/header.ejs %>
   </head>
+
   <body class="container">
     <div class="col-sm-6 col-sm-offset-3" ng-controller="mainController as application">
       <div class="islandGroup animated fadeIn">
@@ -10,7 +11,6 @@
           <div class="col-sm-12">
             <h1>memu.co</h1>
             <h2>A light, browser-based list builder.</h2>
-            <a href="/about">about</a>
           </div>
         </div>
       </div>
@@ -37,5 +37,7 @@
       </div>
     </div>
   </body>
-<% include ../partials/footer.ejs %>
+  <footer>
+    <% include ../partials/footer.ejs %>
+  </footer>
 </html>
