@@ -1,3 +1,19 @@
+/*––––––––– Table of Contents –––––––––––*/
+/* - - - - 0 information     - - - - - - */
+/* - - - - 1 global          - - - - - - */
+/* - - - - 2 typography      - - - - - - */
+/* - - - - 3 form            - - - - - - */
+/* - - - - 4 footer          - - - - - - */
+/* - - - - 5 queries         - - - - - - */
+/*–––––––––––––––––––––––––––––––––––––––*/
+
+/*–––––––– 0 information ––––––––––––––*/
+/* - - - - colors - - - - - - - - - - -*/
+/* - - - - primary - - - - - - - - - - */
+/* - - - - secondary - - - - - - - - - */
+
+
+/*–––––––– 1 global –––––––––––––––––––*/
 html {
   padding:120px 0 120px 0;
   position: relative;
@@ -8,11 +24,13 @@ body {
   -webkit-font-smoothing:antialiased;
   background-color:transparent;
 }
+
+/*–––––––– 2 typography –––––––––––––––*/
 h1 {
-  font-size:72px;
+  font-size:62px;
   height: 85px;
   margin:0;
-  font-weight:400;
+  font-weight:300;
   background-image:url('https://ununsplash.imgix.net/photo-1423766111988-c47a5ff6ed06?dpr=2&fit=crop&fm=jpg&h=600&q=75&w=1050');
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -21,6 +39,7 @@ h1 {
 h2 {
   font-family:"aktiv-grotesk", sans-serif;
   margin:0;
+  font-weight:300;
   color:#999;
   font-size:22px;
 }
@@ -30,8 +49,10 @@ h2 {
   margin-bottom:48px;
   }
 
+/*–––––––– 3 form –––––––––––––––––––––*/
 span {
   font-size:18px;
+  color:#999;
   }span a {
   color:#15A019;
   font-style:italic;
@@ -106,6 +127,7 @@ input[type="color"]:focus,
   background-color:#949472;
 }
 
+/*–––––––– 4 footer –––––––––––––––––––*/
 footer {
   position: absolute;
   left: 0;
@@ -118,9 +140,9 @@ footer {
   }footer p a {
   color:#B3B3B3;
 }
-
+/*–––––––– 5 queries ––––––––––––––––––*/
 @media (max-width:632px) {
   h1 {
-    font-size:63px;
+    font-size:56px;
   }
 }
