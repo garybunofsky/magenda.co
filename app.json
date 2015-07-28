@@ -1,7 +1,6 @@
 {
-  "name": "Memu.co",
+  "name": "Magenda.co",
   "description": "A light, browser-based list builder.",
   "repository": "https://github.com/garybunofsky/memu.co",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["Gary Bunofsky" "node", "express", "angular"]
 }
