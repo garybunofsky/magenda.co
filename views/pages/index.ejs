@@ -21,13 +21,13 @@
                 <input class="form-control animated fadeInLeft" value="" type="text" placeholder="Add an item" ng-model="taskName" autofocus="autofocus">
               </div>
               <div class="col-md-2">
-                <button class="form-control btn animated fadeInRight" ng-click="add()" ng-disabled="!taskName"><i class="fa fa-angle-down"></i></button>
+                <button class="form-control btn animated fadeInRight" ng-click="add()" ng-disabled="!taskName"><i class="fa fa-plus"></i></button>
               </div>
             </form>
         </div>
       </div>
       <div class="taskGroup">
-        <div class="row taskSingle animated fadeIn" ng-repeat="task in tasks" ng-hide="task.complete">   
+        <div class="row taskSingle animated fadeIn" ng-repeat="task in tasks" ng-hide="task.complete">
           <div>
             <input type="checkbox">
             <span>{{task.name}}</span>
