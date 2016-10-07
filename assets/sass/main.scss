@@ -8,17 +8,18 @@
 /*–––––––––––––––––––––––––––––––––––––––*/
 
 /*–––––––– 0 variables ––––––––––––––––––*/
-$first:#662244;
-$second:#b94567;
-$third:#430021;
-$grey:#999;
+$first:#B02067;
+$second:#E12177;
+$third:#b41a5f;
+$grey:#9c9393;
 $light-grey:#B3B3B3;
+$lightest-grey: #f4f4f4;
 
 @mixin font-size($size) {
   font-size:$size;
   font-size:calculateRem($size);
   letter-spacing: -0.015em;
-  line-height:$size / 1.0;
+  line-height:$size / 0.8;
   margin-bottom:$size / 3.5;
 }
 /* - - - - secondary - - - - - - - - - */
@@ -26,44 +27,52 @@ $light-grey:#B3B3B3;
 
 /*–––––––– 1 global –––––––––––––––––––*/
 html {
+  background: $lightest-grey;
+  background-color: $lightest-grey;
   padding:120px 0 120px 0;
   position:relative;
-  min-height:100%; 
+  min-height:100%;
 }
 body {
-  font-family:"aktiv-grotesk", sans-serif;
+  font-family:"PT Sans", sans-serif;
   -webkit-font-smoothing:antialiased;
   background-color:transparent;
 }
 
 /*–––––––– 2 typography –––––––––––––––*/
 h1 {
-  @include font-size(56px);
-  background-image:url('../images/text-bkg.png');
+  @include font-size(72px);
+  text-align: center;
+  background: $first;
+  background: -webkit-linear-gradient(to left, $first , $second);
+  background: linear-gradient(to left, $first , $second);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   -webkit-animation:hue 60s infinite linear;
-  font-weight:300;
-  height:61px;
-  line-height:56px;
+  font-weight:200;
   }
 h2 {
-  @include font-size(22px);
-  font-weight:300;
+  @include font-size(24px);
+  text-align: center;
+  font-weight:400;
   color:$grey;
 }
 .islandGroup {
   margin-bottom:36px;
-  .island {
-    margin-bottom:48px;
-  }
 }
 
+hr {
+  border: none;
+  margin-top: 24px;
+  height: 1px;
+  background-color: $grey;
+  background-image: -webkit-linear-gradient(0deg, $lightest-grey, $grey, $lightest-grey);
+}
 /*–––––––– 3 form –––––––––––––––––––––*/
 span {
   @include font-size(20px);
+  font-weight: 400;
   line-height:0;
-  font-weight:300;
   color:$grey;
   a {
     color:#15A019;
@@ -75,13 +84,13 @@ span {
 .taskGroup {
   margin:48px 0 24px 0;
 }.taskSingle {
-  margin:18px 0 18px 0;
-  padding:12px;
+  margin:14px 0 12px;
+  padding:13px 12px;
   border:1px solid $light-grey;
-  border-radius:4px;
-  -webkit-box-shadow:0 2px 5px rgba(0,0,0,0.06);
-  box-shadow:0 2px 5px rgba(0,0,0,0.06);
-  }.taskSingle input[type=checkbox], 
+  border-radius:5px;
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.01);
+  box-shadow:0 1px 1px rgba(0,0,0,0.01);
+  }.taskSingle input[type=checkbox],
    .taskSingle input[type=radio] {
     margin-right:12px;
     }.taskSingle i {
@@ -97,15 +106,17 @@ span {
 
 .form-control {
   @include font-size(20px);
-  font-weight:300;
+  font-weight:400;
   color:$grey;
+  background-color: $lightest-grey;
   line-height:auto;
   padding:6px 12px;
   height:48px;
   border:1px solid $light-grey;
-  border-radius:4px;
+  border-radius:5px;
   margin:6px 0px;
   -webkit-appearance:none;
+  box-shadow:none;
   [disabled] {
     background-color:#fff;
     border:1px solid $light-grey;
@@ -113,14 +124,15 @@ span {
 }
 textarea:focus,
 input[type="text"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus {
   border:1px solid $second;
   box-shadow:0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px rgba(126, 239, 104, 0.6);
   outline:0 none;
 }
 .btn {
   background-color:$first;
-  font-size:20px;
+  @include font-size(20px);
+  font-weight: 400;
   border:0;
   color:#fff;
     &:hover,
@@ -138,16 +150,20 @@ input[type="text"]:focus,
 /*–––––––– 4 footer –––––––––––––––––––*/
 footer {
   position:absolute;
+  text-align: center;
   left:0;
   bottom:0;
-  height:100px;
+  height:42px;
   width:100%;
-  border-bottom:3px solid $second;
+  padding:12px 0 0 0;
+  background-color: $second;
+  background: $second;
   p {
     @include font-size(16px);
-    color:$light-grey;
+    color:#fff;
+    margin-bottom: 0;
     a {
-      color:$light-grey;
+      color:#fff;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -163,5 +179,8 @@ footer {
     @include font-size(48px);
     height:52px;
     line-height:48px;
+  }
+  h2 {
+    @include font-size(20px);
   }
 }

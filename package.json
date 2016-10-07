@@ -22,5 +22,22 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-less": "^3.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp": "*",
+    "gulp-less": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-concat-css": "*",
+    "gulp-rename": "*",
+    "gulp-notify": "*",
+    "del": "*",
+    "gulp-plumber": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*"
+  }
 }
